@@ -15,7 +15,7 @@ class EmailAddressParser
   def parse
     remove_commas = @email_addresses.delete(",")
     split_emails = remove_commas.split(" ")
-    split_emails
+    split_emails.uniq
 
   end
 end
